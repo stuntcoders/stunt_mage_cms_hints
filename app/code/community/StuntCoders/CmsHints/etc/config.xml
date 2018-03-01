@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <StuntCoders_CmsHints>
+            <version>0.1.0</version>
+        </StuntCoders_CmsHints>
+    </modules>
+    <global>
+        <models>
+            <stuntcoders_cmshints>
+                <class>StuntCoders_CmsHints_Model</class>
+            </stuntcoders_cmshints>
+        </models>
+        <helpers>
+            <stuntcoders_cmshints>
+                <class>StuntCoders_CmsHints_Helper</class>
+            </stuntcoders_cmshints>
+        </helpers>
+    </global>
+    <frontend>
+        <events>
+            <core_block_abstract_to_html_after>
+                <observers>
+                    <stuntcoders_cmshints>
+                        <class>stuntcoders_cmshints/observer</class>
+                        <method>coreBlockAbstractToHtmlAfter</method>
+                    </stuntcoders_cmshints>
+                </observers>
+            </core_block_abstract_to_html_after>
+        </events>
+    </frontend>
+</config>
